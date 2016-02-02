@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    
+     <title>Jin Pyo Jeon's Blog</title>
+    
+    
+    <!-- Bootstrap core CSS -->
+    <link type="text/css" href="/stylesheets/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="/stylesheets/css/blog.css" rel="stylesheet">
+    {% block head %} 
+    {% endblock %}
+    <!-- Custom styles for this template -->
+  </head>
+  
+  <body>
+    <div class="blog-masthead">
+      <div class="container text-right">
+        <div class="row">
+            <nav class="blog-nav">
+                <a class="blog-nav-item active" href="/">Home</a>
+                <a class="blog-nav-item" href="/about">About</a>
+                <a class="blog-nav-item" href="/contact">Contact</a>
+                
+                <a class="blog-nav-item" href="/login">Login</a>
+                <a class="blog-nav-item" href="/signup">Sign In</a> 
+            </nav>
+        </div>
+      </div>
+    </div>
+    
+    {% block content %}
+    {% endblock %} 
+    
+    <footer class="blog-footer">
+      <p>Blog built on the template provided by <a href="http://getbootstrap.com">Bootstrap</a></p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+<link type="text/css" href="/stylesheets/css/signup.css" rel="stylesheet">
+
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+  <form class="form-signin" method="post">
+    <h3 class="form-signin-heading">Log In</h3>
+    <label for="inputEmail" class="sr-only">Email address</label> 
+    <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" value="{{email}}" required autofocus>
+    <p class="error">{{email_error}}</p>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+    <p class="error">{{password_error}}</p>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
+  </form>
+
+</div> <!-- /container -->
+
+{% endblock %}
